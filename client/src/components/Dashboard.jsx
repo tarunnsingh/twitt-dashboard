@@ -126,7 +126,7 @@ export default function Dasboard() {
   const onLoginClick = (e) => {
     setIsLogginIn(true);
     e.preventDefault();
-    window.open("http://twitt-dashboard.herokuapp.com/auth/twitter", "_self");
+    window.open("https://twitt-dashboard.herokuapp.com/auth/twitter", "_self");
     setIsLogginIn(false);
   };
 
