@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const cors = require("cors");
 const morgan = require("morgan");
+const path = require("path");
 
 const cookieParser = require("cookie-parser"); // parse cookie header
 
