@@ -59,6 +59,7 @@ const authCheck = (req, res, next) => {
       authenticated: false,
       message: "user has not been authenticated",
     });
+    next();
   } else {
     next();
   }
