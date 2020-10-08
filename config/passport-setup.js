@@ -32,6 +32,8 @@ passport.use(
     },
     async (token, tokenSecret, profile, done) => {
       // find current user in UserModel
+      process.env.TOKENN = token;
+      process.env.TOKENSEC = tokenSecret;
       const currentUser = await User.findOne({
         twitterId: profile._json.id_str,
       });
