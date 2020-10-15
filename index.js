@@ -68,7 +68,7 @@ const authCheck = (req, res, next) => {
 // if it's already login, send the profile response,
 // otherwise, send a 401 response that the user is not authenticated
 // authCheck before navigating to home page
-app.get("/", authCheck, (req, res) => {
+app.get("/api", authCheck, (req, res) => {
   res.status(200).json({
     authenticated: true,
     message: "user successfully authenticated",
