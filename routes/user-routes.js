@@ -5,8 +5,8 @@ const keys = require("../config/keys");
 const T = new Twit({
   consumer_key: keys.TWITTER_CONSUMER_KEY,
   consumer_secret: keys.TWITTER_CONSUMER_SECRET,
-  access_token: process.env.TWITTER_ACCESS_TOKEN,
-  access_token_secret: process.env.TWITTER_TOKEN_SECRET,
+  access_token: keys.TWITTER_ACCESS_TOKEN,
+  access_token_secret: keys.TWITTER_TOKEN_SECRET,
 });
 
 router.get("/getTweets", (req, res) => {
