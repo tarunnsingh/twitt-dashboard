@@ -71,17 +71,6 @@ const authCheck = (req, res, next) => {
 // if it's already login, send the profile response,
 // otherwise, send a 401 response that the user is not authenticated
 // authCheck before navigating to home page
-app.get("/", authCheck, (req, res) => {
-  res
-    .status(200)
-    .json({
-      authenticated: true,
-      message: "user successfully authenticated",
-      user: req.user,
-      cookies: req.cookies,
-    })
-    .redirect(process.env.CLIENT_HOME_PAGE_URL);
-});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
