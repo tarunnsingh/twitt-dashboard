@@ -55,10 +55,13 @@ app.use("/user", userRoutes);
 
 const authCheck = (req, res, next) => {
   if (!req.user) {
-    res.status(401).json({
-      authenticated: false,
-      message: "user has not been authenticated",
-    });
+    res
+      .status(401)
+      .json({
+        authenticated: false,
+        message: "user has not been authenticated",
+      })
+      .redirect(process.env.CLIENT_HOME_PAGE_URL);
     next();
   } else {
     next();
