@@ -4,7 +4,7 @@ Picks up Tweets from your Home Timeline (Your Tweets + Your Friends Tweets). Als
 > ## :confused: Deployment Error: Client Deployed to Netlify + Server at Heroku.
 > Due to some errors, the site is not working on production environment.
 
-## Tap on this Image, to see it work locally.
+## See demo video below or check out [LIVE](https://twitt-dashboard.herokuapp.com/).
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/iIkLQAKoVe0/0.jpg)](http://www.youtube.com/watch?v=iIkLQAKoVe0)
 
 ## Run it Locally :rocket:
